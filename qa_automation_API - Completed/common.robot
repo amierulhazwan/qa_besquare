@@ -1,4 +1,4 @@
-*** Keyword ***
+*** Keywords ***
 Login
     [arguments]                                     ${email}            ${pw}
     open browser                                    url=http://app.deriv.com    browser=chrome
@@ -15,7 +15,6 @@ Settings
     click element                                   ${setting}
     wait until page contains element                ${acc_setting}
     click element                                   ${api_token}
-
 No scopes selected and a token name is inserted.
     wait until page does not contain element        ${initial_loader}   60
     input text                                      ${token_field}      token_name

@@ -13,7 +13,9 @@ ${setting}          //*[@class="account-settings-toggle"]
 ${acc_setting}      //*[@class="account"]
 ${api_token}        //*[@id="/account/api-token"]
 
-# Test Variable
+${preloader}        dt_core_header_acc-info-preloader
+${initial_loader}   //*[@class="initial-loader account__initial-loader"]
+
 ${read_parent}      //*[@name="read" and contains (@class, "dc-checkbox__input")]//parent::label
 ${read}             //*[@name="read" and contains (@class, "dc-checkbox__input")]
 ${trade_parent}     //*[@name="trade" and contains (@class, "dc-checkbox__input")]//parent::label
@@ -25,8 +27,6 @@ ${admin}            //*[@name="admin" and contains (@class, "dc-checkbox__input"
 ${ti_parent}        //*[@name="trading_information" and contains (@class, "dc-checkbox__input")]//parent::label
 ${ti}               //*[@name="trading_information" and contains (@class, "dc-checkbox__input")]
 
-${preloader}        dt_core_header_acc-info-preloader
-${initial_loader}   //*[@class="initial-loader account__initial-loader"]
 ${token_field}      //*[@name="token_name"]
 ${create_dis}       //*[@type="submit" and @disabled]
 ${create}           //*[@class="dc-btn dc-btn__effect dc-btn--primary dc-btn__large da-api-token__button"]
